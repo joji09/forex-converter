@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+<h1>Currency Converter</h1>
+
+<form method="post">
+    <input type="text" class="from_currency" name="from_currency" maxlength="3" required placeholder="Converting from">
+    <input type="text" class="to_currency" name="to_currency" maxlength="3" required placeholder="Converting to">
+    <input type="number" class="amount" name="amount" placeholder="Amount" required>
+    <input type="submit" value="Convert">
+</form>
+
+{% if error_message %}
+    <h2 class="error">{{ error_message}}</h2>
+{% endif %}
+
+{% if converted_amount %}
+    <h2 class="result">Converted Amount: <b>{{converted_amount}}</b></h2>
+    {% endif %}
+</body>
+</html>

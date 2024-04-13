@@ -1,0 +1,17 @@
+.error {
+    background-color: brown;
+    color: white;
+    width: 500px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.result {
+    background-color: #2cb67d;
+    color: black;
+    width: 500px;
+    padding: 5px;
+    text-align: center;
+}
